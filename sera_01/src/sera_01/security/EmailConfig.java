@@ -1,4 +1,4 @@
-package sera_01.security.controller;
+package sera_01.security;
 
 import java.util.*;
 //import java.util.Properties;

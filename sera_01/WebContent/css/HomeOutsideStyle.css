@@ -1,0 +1,53 @@
+.column {
+    float: left;
+    width: 200px;
+    padding: 10px;
+    height: 200px; 
+    border: 1px solid black;
+    background-color: gray;
+    
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+} 
+
+.wrapper {
+    text-align: center;
+}
+
+.label {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 80px;
+    
+    
+}
+
+#house {
+    margin-top: 30px;
+    display: inline-block;
+}
+
+#entrance{
+    display: inline-block;
+    border: 1px solid black;
+    height: 60px;
+    width: 130px;
+    background-color: gray;
+    
+}
+
+
+#mainWrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+
+#scanner {
+    margin-top: 100px;  
+}

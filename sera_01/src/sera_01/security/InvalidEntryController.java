@@ -1,4 +1,4 @@
-package sera_01.security.controller;
+package sera_01.security;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -31,7 +31,7 @@ public class InvalidEntryController extends HttpServlet {
 		// s.e.r.a.secure1
 		String from = "s.e.r.a.secure1";
         String pass = "easyenter123";
-        String[] to = { "aguilaramarco@yahoo.com" }; // list of recipient email addresses
+        String[] to = { "guyrandom437@gmail.com" }; // list of recipient email addresses
         String subject = "Burglary";
         String body = "Someone has tried to break into your house. We have contacted the police and they're on"
         		+ " their way.";
