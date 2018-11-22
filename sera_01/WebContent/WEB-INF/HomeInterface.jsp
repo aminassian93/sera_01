@@ -9,8 +9,19 @@
 <title>Insert title here</title>
 
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/HomeInsideStyle.css" />
+
+<!-- Uses session variable to initialize userID (used to insert data into correct subtreee on Firebase) -->
+<script>
+	let userID = ${userID};
+</script>
+
 </head>
+
 <body>
+
+	
+	
+	
 	<div id="mainWrapper">
 
    
@@ -20,13 +31,15 @@
             <div id="house">
                 <div class="row">
 
-                    <div class="column" id="1" onclick="entryAttempt()">
+                    <div class="column" id="masterBedroom" onclick="roomClicked('masterBedroom')">
+                    		
                         <div class="label">
                             Master Bedroom
                         </div>
                     </div>
 
-                    <div class="column" id="2" onclick="entryAttempt()">
+                    <div class="column" id="livingRoom" onclick="roomClicked('livingRoom')">
+                    		
                         <div class="label">
                             Living Room
                         </div>
@@ -36,13 +49,15 @@
 
                 <div class="row2">
 
-                    <div class="column" id="3" onclick="entryAttempt()">
+                    <div class="column" id="bathroom" onclick="roomClicked('bathroom')">
+                    		
                         <div class="label">
                             Bathroom
                         </div>
                     </div>
 
-                    <div class="column" id="4" onclick="entryAttempt()">
+                    <div class="column" id="kitchen" onclick="roomClicked('kitchen')">
+                    		
                         <div class="label">
                             Kitchen
                         </div>
@@ -53,7 +68,7 @@
 
 
             <div class="wrapper">
-                <div id="entrance" onclick="entryAttempt()">
+                <div id="entrance" onclick="exitHome()">
                 		
                 </div>
             </div>
@@ -65,10 +80,14 @@
         
         <div id="welcomeMessage">
 
-			<h2>Name Goes Here</h2>
+			<h2>Welcome!</h2>
 
         </div>
  
     </div>
+    
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    <script type="text/javascript" src="js/config.js"></script>
+    <script type="text/javascript" src="js/Inside.js"></script>
 </body>
 </html>

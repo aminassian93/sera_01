@@ -1,5 +1,10 @@
 // Firebase stuff
 var database = firebase.database();
+
+// Should make this an empty object, then, in your Firebase method below
+// populate the object with valid users (Key: ID, Value: name)
+// THEN!
+// Inside checkUser(), you will store the Name of the valid user if the tempID matches a valid ID
 let listOfValidIds = []; 
 
 var query = firebase.database().ref("users").orderByKey();
